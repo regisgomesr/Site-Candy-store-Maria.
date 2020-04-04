@@ -1,0 +1,299 @@
+/* General */
+
+html {
+    font-family: 'Open sans', 'sans-serif';
+    color: #373A3C;
+}
+
+a {
+    transition: .5s;
+}
+
+/* Sidebar */
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #006599;
+    padding-top: 40px;
+}
+
+#sidebar h1 {
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#sidebar a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#sidebar a:hover {
+    color: #F4EF5E;
+}
+
+#sidebar li {
+    padding: 20px;
+}
+
+.sidebar-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.logo-confectionery {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* content */
+
+.content {
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+    color: #006599;
+    margin-bottom: 30px;
+}
+
+.content h1 {
+    font-size: 48px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+section {
+    padding-left: 50px;
+}
+
+/* Welcome */
+
+#session-welcome {
+    padding-left: 0;
+}
+
+.session-welcome-content {
+    padding-left: 50px;
+}
+
+#session-welcome .banner {
+    height: 500px;
+    background-image: url('../img/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#session-welcome h1 {
+    margin-top: 70px;
+}
+
+#session-welcome::after, #session-aboutUs::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.session-minibanner {
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.session-description {
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.session-description p {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.session-welcome-btn, form input[type=submit] {
+    background-color: #006599;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: .5s;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.session-welcome-btn:hover, form input[type=submit]:hover {
+    background-color: #2790C6;
+}
+
+/* session about Us */
+
+#session-aboutUs .session-minibanner {
+    float: right;
+    margin-right: 50px;
+    background: url('../img/banner4.jpg');
+}
+
+#session-aboutUs .session-description {
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 400px);
+}
+
+/* gallery */
+
+.banner-gallery {
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+
+#session-sweets1, #session-sweets2, #session-sweets3 {
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.sweets1-imgs {
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img1 {
+    background-image: url('../img/galeria1.jpg');
+    margin-left: 0;
+}
+
+#img2 {
+    background-image: url('../img/galeria2.jpg');
+}
+
+#img3 {
+    background-image: url('../img/galeria3.jpg');
+}
+
+#img4 {
+    background-image: url('../img/galeria4.jpg');
+}
+
+#img5 {
+    background-image: url('../img/galeria5.jpg');
+    margin-right: 0;
+}
+
+.sweets2-imgs {
+    width: 32.3%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img6 {
+    background-image: url('../img/galeria6.jpg');
+    margin-left: 0;
+}
+
+#img7 {
+    background-image: url('../img/galeria7.jpg');
+}
+
+#img8 {
+    background-image: url('../img/galeria8.jpg');
+    margin-right: 0;
+}
+
+.sweets3-imgs {
+    width: 23.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img9 {
+    background-image: url('../img/galeria9.jpg');
+    margin-left: 0;
+}
+
+#img10 {
+    background-image: url('../img/galeria10.jpg');
+}
+
+#img11 {
+    background-image: url('../img/galeria11.jpg');
+}
+
+#img12 {
+    background-image: url('../img/galeria12.jpg');
+    margin-right: 0;
+}
+
+/* contact */
+
+#form-contact {
+    width: 500px;
+}
+
+#form-contact input[type=text], #form-contact input[type=email], #form-contact textarea {
+    display: block;
+    border: solid 1px #006599;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+}
+
+#form-contact input[type=text]:focus, #form-contact input[type=email]:focus, #form-contact textarea:focus {
+    border-color: #2790C6;
+} 
+
+#form-contact textarea {
+    height: 150px;
+}
+
+#form-contact ::placeholder {
+    color: #2790C6;
+}
+
+#form-contact input[type=submit] {
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+    color: #006599;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+}
